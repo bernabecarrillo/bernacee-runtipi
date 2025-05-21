@@ -1,0 +1,24 @@
+{
+  "name": "Actual",
+  "id": "actual",
+  "available": true,
+  "short_desc": "Servidor de Actual Budget",
+  "author": "actualbudget",
+  "port": 8382,
+  "categories": [
+    "finance"
+  ],
+  "description": "Servidor de Actual Budget",
+  "tipi_version": 2,
+  "version": "v25.5.0",
+  "source": "https://github.com/actualbudget/actual",
+  "exposable": true,
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "created_at": 1747851829,
+  "updated_at": 1747851829,
+  "dynamic_config": true,
+  "form_fields": []
+}
