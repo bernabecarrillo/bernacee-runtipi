@@ -1,25 +1,19 @@
 {
   "services": [
     {
-      "name": "actual_server",
-      "image": "docker.io/actualbudget/actual-server:latest",
+      "name": "actual-budget",
+      "image": "actualbudget/actual-server:latest",
       "internalPort": 5006,
-      "isMain": true,
       "volumes": [
         {
-          "hostPath": "${APP_DATA_DIR}/actual-data",
+          "hostPath": "${APP_DATA_DIR}/data",
           "containerPath": "/data",
           "readOnly": false,
           "shared": false,
           "private": false
         }
       ],
-      "healthCheck": {
-        "test": "node src/scripts/health-check.js",
-        "interval": "60s",
-        "timeout": "10s",
-        "retries": 3
-      }
+      "isMain": true
     }
   ]
 }
